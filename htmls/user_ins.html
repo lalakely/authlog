@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription-My Authlog</title>
+    <style>
+        body{
+            background-color: #202124;
+        }
+        .divlog{
+            display: flex;
+            justify-content: center;
+        }
+        .divp{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            background-color: #39393a;
+            width: 500px;
+            height: 500px;
+            border-radius: 30px;
+            position: relative;
+            top: 130px;
+        }
+        .login{
+            width: 300px;
+            height: 42px;
+            border: none;
+            outline: none;
+            padding-left:10px;
+            background-color: rgb(89, 89, 90);
+            border-radius: 30px;
+            margin: 5px;
+        }
+        .divconnex{
+            display: flex;
+            justify-content: center;
+        }
+        .bconnex{
+            background-color: rgb(74, 74, 75);
+            border: none;
+            width: 200px;
+            height: 42px;
+            position:relative;
+            border-radius: 30px;
+            margin: 5px;
+        }
+        .bconnex:hover{
+            background-color: rgb(230, 230, 87);
+            font-weight: bold;
+        }
+        .bcreer{
+            background-color: rgb(74, 74, 75);
+            border: none;
+            width: 200px;
+            height: 42px;
+            position:relative;
+            border-radius: 30px;
+            margin: 5px;
+        }
+        .bcreer:hover{
+            background-color: rgb(230, 230, 87);
+            font-weight: bold;
+        }
+        .formp{
+            position: relative;
+            bottom:50px;
+        }
+        .img_auth{
+            background-image: url(../photo/INSCRIPTIONlog-removebg-preview.png);
+            background-size: cover;
+            width: 250px;
+            height: 250px;
+        }
+        .imlogo{
+            background-image: url(../photo/Auth.log_2-removebg-preview.png);
+            background-size: cover;
+            width: 200px;
+            height: 45px;
+        }
+        .connexion{
+            display: flex;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 10px;
+        }
+        .secon{
+            font-weight: bold;
+            text-decoration: none;
+            color: black;
+            margin-left: 5px;
+        }
+        .error{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+            color: red;
+            position: relative;
+            left:15px;
+        }
+    </style>
+</head>
+<body>
+    <a href="../index.html">
+        <div class="imlogo"></div>
+    </a>
+    <div class="divlog">
+        <div class="divp">
+            <div class="img_auth"></div>
+            <div class="formp">
+                <form action="../cgi/inscri.cgi" method="post">
+                    <div>
+                        <input type="text" name="login" placeholder="Login" class="login" required>
+                    </div>
+                    <div class="error">
+                        utilisateur déja existant
+                    </div>
+                    <div>
+                        <input type="text" name="password" placeholder="Password" class="login" required >
+                    </div>
+                    <div class="divconnex">
+                        <button class="bcreer">Créer un compte</button>
+                    </div>
+                </form>
+                <div class="connexion">
+                    Vous avez déja un compte?
+                    <a href="../connexion.html" class="secon">Se connecter</a>
+                </div>
+            </div>
+        </div>
+    </div> 
+</body>
+</html>

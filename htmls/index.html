@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My authlog</title>
+    <style>
+        body{
+            background-image: url(./photo/lilLogo.png);
+            background-color: #202124;
+            font-family: cursive;
+            margin: 0;
+        }
+        .Username{
+            background-color: rgb(89, 89, 90);
+            border: none;
+            outline: none;
+            padding-left:10px;
+            border-top-left-radius: 30px;
+            border-bottom-left-radius: 30px;
+            width: 700px;
+            height: 40px;
+        }
+        .button1{
+            background-color: rgb(74, 74, 75);
+            border: none;
+            border-top-right-radius: 30px;
+            border-bottom-right-radius: 30px;
+            width: 100px;
+            height: 42px;
+            position:relative;
+            right:5px;
+        }
+        .button1:hover{
+            background-color: rgb(230, 230, 87);
+        }
+        .divp{
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+        }
+        .img_auth{
+            background-image: url(./photo/Auth.log-removebg-preview.png);
+            background-size: cover;
+            width: 500px;
+            height: 500px;
+            position: relative;
+            top: 120px;
+            left:200px;
+        }
+        .divim{
+            display: flex;
+            justify-content: center;
+        }
+        .tout{
+            background-color: #4a4a4b;
+            border: none;
+            width: 200px;
+            height: 42px;
+            border-radius: 30px;
+            position: relative;
+            top :10px;
+        }
+        .tout:hover{
+            background-color: rgb(230, 230, 87);
+        }
+        .divb{
+            background-color: #3b3b3b;
+            position: relative;
+            width: cover;
+            height: 60px;
+            display: flex;
+        }
+        .bconnex{
+            background-color: rgb(74, 74, 75);
+            border: none;
+            width: 150px;
+            height: 42px;
+            position:relative;
+            top: 5px;
+            border-radius: 30px;
+            margin: 5px;
+        }
+        .bconnex:hover{
+            background-color: rgb(230, 230, 87);
+        }
+        .bcreer{
+            background-color: rgb(74, 74, 75);
+            border: none;
+            width: 200px;
+            height: 42px;
+            position:relative;
+            top: 5px;
+            border-radius: 30px;
+            margin: 5px;
+        }
+        .bcreer:hover{
+            background-color: rgb(230, 230, 87);
+        }
+        .divacc{
+            display: flex;
+        }
+        .divbin{
+            border-radius: 30px;
+            position: relative;
+            left:50px;
+            top:100px;
+            background-color: #3b3b3b;
+            width: 700px;
+            height: 500px;
+        }
+        .bienvenue{
+            background-image: url(./photo/mot_bienvenue.png);
+            background-size: cover;
+            position: relative;
+            top: 150px;
+            width: 300px;
+            height: 40px;
+        }
+        .main{
+            background-image: url(./photo/illu_bienvenue.png);
+            background-size: cover;
+            position: relative;
+            top: 130px;
+            width: 200px;
+            height: 200px;
+        }
+        .divinbin{
+            display: flex;
+            justify-content: center;
+        }
+        .text{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            position: relative;
+            top: 100px;
+            color: #202124;
+            margin: 30px;
+        }
+        .span1{
+            color: rgb(230, 230, 87);
+        }
+        .blur{
+            background-color: #4a4a4b50;
+            height: 725px;
+        }
+    </style>
+</head>
+<body>
+    <div class="divb">
+        <div>
+            <a href="http://www.auth.com/cgi/user_co.cgi"><button class="bconnex" type="submit">Connexion</button></a>
+        </div>
+        <div>
+            <a href="http://www.auth.com/cgi/user_ins.cgi"><button class="bcreer">Créer un compte</button></a>
+        </div>
+    </div>
+    <div class="blur">
+        <div class="divacc">
+            <div class="divbin">
+                <div class="divinbin">
+                    <div class="bienvenue"></div>
+                </div>
+                <div class="divinbin">
+                    <div class="main"></div>
+                </div>
+                <p class="text">Bienvenue sur <span class="span1">My AuthLog</span>, votre ressource ultime pour surveiller, analyser et sécuriser votre fichier auth.log Linux.
+                    Découvrez en temps réel ce qui se passe sur votre système Linux grâce à des informations détaillées provenant de votre fichier auth.log.
+                    Explorez en toute sécurité votre auth.log : Votre guichet unique pour comprendre chaque entrée, sécuriser votre système et rester en contrôle.
+                </p>
+            </div>
+            <div class="divim">
+                <div class="img_auth"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

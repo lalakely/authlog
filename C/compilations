@@ -1,0 +1,5 @@
+>> compilation search:
+gcc -o ../cgi/auth_search.cgi auth_search.c search_fonction.c fonction.c head.h 
+
+>>compilation all:
+gcc -o ../cgi/auth_all.cgi auth_all.c all_fonction.c fonction.c head.h 
